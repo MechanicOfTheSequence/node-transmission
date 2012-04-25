@@ -8,6 +8,6 @@ $(TRANSMISSION)/libtransmission/libtransmission.a: $(TRANSMISSION)/Makefile
 	cd "$(TRANSMISSION)" && make
 
 $(TRANSMISSION)/Makefile:
-	cd "$(TRANSMISSION)" && ./configure --disable-nls --disable-gtk --disable-mac --enable-cli --enable-daemon
+	cd "$(TRANSMISSION)" && ./configure --disable-nls --without-gtk --disable-mac --enable-cli --enable-daemon
 
 .PHONY: module
